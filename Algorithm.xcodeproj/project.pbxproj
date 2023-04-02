@@ -52,6 +52,7 @@
 		F665AE6629D3392E003E3F38 /* 괄호 회전하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "괄호 회전하기.swift"; sourceTree = "<group>"; };
 		F665AE6729D3B11F003E3F38 /* 이진 변환 반복하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "이진 변환 반복하기.swift"; sourceTree = "<group>"; };
 		F665AE6829D486A7003E3F38 /* 숫자 변환하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "숫자 변환하기.swift"; sourceTree = "<group>"; };
+		F68E46D929D9CA4600037C28 /* 영역 구하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "영역 구하기.swift"; sourceTree = "<group>"; };
 		F6FA61AD29BA1C2C00C5F6B6 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6FA61B029BA1C2C00C5F6B6 /* 실패율.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "실패율.swift"; sourceTree = "<group>"; };
 		F6FA61B729BA1CC600C5F6B6 /* 모의고사.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "모의고사.swift"; sourceTree = "<group>"; };
@@ -86,6 +87,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F68E46D729D9CA2F00037C28 /* PRG */ = {
+			isa = PBXGroup;
+			children = (
+				F6FA61BE29BA1D5200C5F6B6 /* LV.1 */,
+				F6FA61BF29BA1D5F00C5F6B6 /* LV.2 */,
+				F6FA61C029BA1D6200C5F6B6 /* LV.3 */,
+			);
+			path = PRG;
+			sourceTree = "<group>";
+		};
+		F68E46D829D9CA3700037C28 /* BOJ */ = {
+			isa = PBXGroup;
+			children = (
+				F68E46D929D9CA4600037C28 /* 영역 구하기.swift */,
+			);
+			path = BOJ;
+			sourceTree = "<group>";
+		};
 		F6FA61A429BA1C2C00C5F6B6 = {
 			isa = PBXGroup;
 			children = (
@@ -105,9 +124,8 @@
 		F6FA61AF29BA1C2C00C5F6B6 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
-				F6FA61BE29BA1D5200C5F6B6 /* LV.1 */,
-				F6FA61BF29BA1D5F00C5F6B6 /* LV.2 */,
-				F6FA61C029BA1D6200C5F6B6 /* LV.3 */,
+				F68E46D729D9CA2F00037C28 /* PRG */,
+				F68E46D829D9CA3700037C28 /* BOJ */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";

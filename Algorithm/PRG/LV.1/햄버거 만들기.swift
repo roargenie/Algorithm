@@ -2,9 +2,7 @@
 
 import Foundation
 
-# 햄버거 만들기
 
-```swift
 func solution(_ ingredient:[Int]) -> Int {
     var stack: [Int] = []
     var ans = 0
@@ -24,9 +22,7 @@ func solution(_ ingredient:[Int]) -> Int {
     }
     return ans
 }
-```
 
-```swift
 func solution(_ ingredient:[Int]) -> Int {
     var stack: [Int] = []
     var count: Int = 0
@@ -43,9 +39,7 @@ func solution(_ ingredient:[Int]) -> Int {
     }
     return count
 }
-```
 
-```swift
 func solution(_ ingredient:[Int]) -> Int {
     var stack: [Int] = []
     var ans = 0
@@ -66,4 +60,3 @@ func solution(_ ingredient:[Int]) -> Int {
 }
 
 // stack.suffix(n) 은 왜 안되지? 실패 케이스가 뭔지 모르겠다.
-```
