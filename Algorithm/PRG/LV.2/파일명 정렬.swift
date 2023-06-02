@@ -7,7 +7,7 @@
 
 import Foundation
 
-func solution1(_ files: [String]) -> [String] {
+func solution(_ files: [String]) -> [String] {
     let sortedFiles = files.sorted {
         let file1 = parseFileName($0)
         let file2 = parseFileName($1)
