@@ -91,6 +91,9 @@
 		F6976AAD2A276E3D0004CB63 /* 모음사전.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "모음사전.swift"; sourceTree = "<group>"; };
 		F6976AAE2A28D0FB0004CB63 /* 파일명 정렬.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "파일명 정렬.swift"; sourceTree = "<group>"; };
 		F6976AAF2A29B1040004CB63 /* 프렌즈 4블록.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프렌즈 4블록.swift"; sourceTree = "<group>"; };
+		F6976AB02A29C5950004CB63 /* 뒤에 있는 큰 수 찾기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "뒤에 있는 큰 수 찾기.swift"; sourceTree = "<group>"; };
+		F6976AB12A29E88D0004CB63 /* 2개 이하로 다른 비트.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2개 이하로 다른 비트.swift"; sourceTree = "<group>"; };
+		F6976AB22A2B82F50004CB63 /* 다리를 지나는 트럭.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "다리를 지나는 트럭.swift"; sourceTree = "<group>"; };
 		F6FA61AD29BA1C2C00C5F6B6 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6FA61B029BA1C2C00C5F6B6 /* 실패율.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "실패율.swift"; sourceTree = "<group>"; };
 		F6FA61B729BA1CC600C5F6B6 /* 모의고사.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "모의고사.swift"; sourceTree = "<group>"; };
@@ -258,6 +261,9 @@
 				F6976AAD2A276E3D0004CB63 /* 모음사전.swift */,
 				F6976AAE2A28D0FB0004CB63 /* 파일명 정렬.swift */,
 				F6976AAF2A29B1040004CB63 /* 프렌즈 4블록.swift */,
+				F6976AB02A29C5950004CB63 /* 뒤에 있는 큰 수 찾기.swift */,
+				F6976AB12A29E88D0004CB63 /* 2개 이하로 다른 비트.swift */,
+				F6976AB22A2B82F50004CB63 /* 다리를 지나는 트럭.swift */,
 			);
 			path = LV.2;
 			sourceTree = "<group>";
