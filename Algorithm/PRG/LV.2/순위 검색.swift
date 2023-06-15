@@ -8,65 +8,61 @@
 import Foundation
 
 func solution(_ info:[String], _ query:[String]) -> [Int] {
-    var db: [String : [Int]] = [ : ]
     var result: [Int] = []
-
-    // db 생성
-    for i in info {
-        let arr = i.components(separatedBy: " ")
-        let languages = [arr[0], "-"]
-        let jobs = [arr[1], "-"]
-        let careers = [arr[2], "-"]
-        let soulFoods = [arr[3], "-"]
-        let score = Int(arr[4])!
-
-        for language in languages{
-            for job in jobs{
-                for career in careers {
-                    for soulFood in soulFoods {
-                        let key = "\(language)\(job)\(career)\(soulFood)"
-                        if db[key] == nil {
-                            db[key] = [score]
+    var cases: [String: [Int]] = [:]
+    
+    for info in info {
+        let info = info.components(separatedBy: " ")
+        let lang = [info[0], "-"]
+        let job = [info[1], "-"]
+        let career = [info[2], "-"]
+        let food = [info[3], "-"]
+        
+        var scores: [Int] = []
+        
+        for lang in lang {
+            for job in job {
+                for career in career {
+                    for food in food {
+                        let str = lang + job + career + food
+                        let score = Int(info[4])!
+                        scores.append(score)
+                        if let _ = cases[str] {
+                            cases[str]?.append(score)
                         } else {
-                            db[key]?.append(score)
+                            cases[str] = [score]
                         }
                     }
                 }
             }
         }
     }
-
-    // 이진탐색을 위해 오름차순 정렬
-    let dbCnt = db.count
-    for i in db{
-        let sortArr = i.value.sorted()
-        db[i.key] = sortArr
-    }
-
-    // 마지막 score 비교
-    for i in query{
-        let arr = i.components(separatedBy: " ")
-        let key = "\(arr[0])\(arr[2])\(arr[4])\(arr[6])"
-        let score = Int(arr[7])!
-
-        if let scoreArr = db[key]{
-            // 이진 탐색
-            var low = 0
-            var high = scoreArr.count - 1
-            var mid = 0
-
-            while low <= high {
-                mid = (low + high) / 2
-                if scoreArr[mid] < score {
-                    low = mid + 1
-                } else {
-                    high = mid - 1
-                }
-            }
-            result.append(scoreArr.count - low)
-        } else{
+    
+    cases.keys.forEach { cases[$0]?.sort(by: <) }
+        
+    for query in query {
+        var query = query.components(separatedBy: " ").filter { $0 != "and" }
+        let score = Int(query.popLast()!)!
+        
+        guard let scores = cases[query.joined()] else {
             result.append(0)
+            continue
         }
+        
+        var low = 0
+        var high = scores.count - 1
+        var mid = 0
+        
+        while low <= high {
+            mid = (low + high) / 2
+            if scores[mid] < score {
+                low = mid + 1
+            } else {
+                high = mid - 1
+            }
+        }
+        
+        result.append(scores.count - low)
     }
     
     return result
